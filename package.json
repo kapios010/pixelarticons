@@ -2,7 +2,9 @@
   "name": "pixelarticons",
   "version": "1.8.1",
   "description": "Finest handmade pixelart icons.",
-  "main": "index.js",
+  "exports": {
+    "./*": "./svg/*"
+  },
   "scripts": {
     "font": "svgtofont --sources ./svg --output ./fonts",
     "test": "echo \"Error: no test specified\""
